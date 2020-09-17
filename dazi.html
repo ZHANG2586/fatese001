@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div class="kk" style="border: 1px solid red;width: 1000px;height: 50px;">
+			
+		</div>
+		<script>
+			const div=document.getElementsByClassName("kk")[0];
+			var count=0;
+			var str="i jjjklnakjdjdealdwldl!";
+			function dazi(){
+				if(count<str.length)
+				{
+					div.innerHTML=str.slice(0,count++)+'_';
+					setInterval('dazi()',300);
+				}
+				else{
+					div.innerHTML="";
+					count=0;
+				}
+			}
+			dazi();
+		   
+		</script>
+	</body>
+</html>
